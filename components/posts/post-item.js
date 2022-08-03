@@ -15,13 +15,12 @@ const PostItem = (props) => {
 
     const imagePath = `/images/posts/${slug}/${image}`
     const linkPath = `/posts/${slug}`
-    console.log(imagePath)
+
     return (
         <li className={classes.post}>
             <Link passHref href={linkPath}>
                 <a>
                     <div className={classes.image}>
-                        {/* <img src={imagePath} alt={title} /> */}
                         <Image
                             src={imagePath}
                             alt={title}
